@@ -8,32 +8,32 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
 $estadosBrasileiros = array(
-    // 'AC' => 'Acre',
-    // 'AL' => 'Alagoas',
-    // 'AP' => 'Amapá',
-    // 'AM' => 'Amazonas',
-    // 'BA' => 'Bahia',
-    // 'CE' => 'Ceará',
-    'DF' => 'Distrito Federal'
-    // 'ES' => 'Espírito Santo',
-    // 'GO' => 'Goiás',
-    // 'MA' => 'Maranhão',
-    // 'MT' => 'Mato Grosso',
-    // 'MS' => 'Mato Grosso do Sul',
-    // 'PA' => 'Pará',
-    // 'PB' => 'Paraíba',
-    // 'PR' => 'Paraná',
-    // 'PE' => 'Pernambuco',
-    // 'PI' => 'Piauí',
-    // 'RJ' => 'Rio de Janeiro',
-    // 'RN' => 'Rio Grande do Norte',
-    // 'RS' => 'Rio Grande do Sul',
-    // 'RO' => 'Rondônia',
-    // 'RR' => 'Roraima',
-    // 'SC' => 'Santa Catarina',
-    // 'SP' => 'São Paulo',
-    // 'SE' => 'Sergipe',
-    // 'TO' => 'Tocantins'
+    'AC' => 'Acre',
+    'AL' => 'Alagoas',
+    'AP' => 'Amapá',
+    'AM' => 'Amazonas',
+    'BA' => 'Bahia',
+    'CE' => 'Ceará',
+    'DF' => 'Distrito Federal',
+    'ES' => 'Espírito Santo',
+    'GO' => 'Goiás',
+    'MA' => 'Maranhão',
+    'MT' => 'Mato Grosso',
+    'MS' => 'Mato Grosso do Sul',
+    'PA' => 'Pará',
+    'PB' => 'Paraíba',
+    'PR' => 'Paraná',
+    'PE' => 'Pernambuco',
+    'PI' => 'Piauí',
+    'RJ' => 'Rio de Janeiro',
+    'RN' => 'Rio Grande do Norte',
+    'RS' => 'Rio Grande do Sul',
+    'RO' => 'Rondônia',
+    'RR' => 'Roraima',
+    'SC' => 'Santa Catarina',
+    'SP' => 'São Paulo',
+    'SE' => 'Sergipe',
+    'TO' => 'Tocantins'
 );
 
 foreach ($estadosBrasileiros as $uf => $value) {
@@ -42,7 +42,7 @@ foreach ($estadosBrasileiros as $uf => $value) {
     echo "Iniciando processo com {$uf} - {$value}...";
     echo "\n";
 
-    for ($i=15; $i <= 24; $i++) {
+    for ($i=1; $i <= 24; $i++) {
         $inicio = microtime(true);
 
         echo "\n";

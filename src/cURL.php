@@ -11,7 +11,7 @@ function chamarLambda($estado = "", $ramo = null) {
     echo "Ramo - {$ramo}....";
     echo "\n";
     // URL base do seu Lambda
-    $lambdaURL = 'https://2lt7sgynmcirtwgd2mj46hiboq0nachn.lambda-url.us-east-1.on.aws/';
+    $lambdaURL = 'https://example.com.br/';
 
     // Construir a URL completa com os parâmetros e a urlBase
     $url = $lambdaURL . '?estado=' . urlencode($estado) . '&ramo=' . urlencode($ramo);
